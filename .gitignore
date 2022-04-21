@@ -1,0 +1,6 @@
+# npm packages
+node_modules
+node_modules/
+
+# source
+src/

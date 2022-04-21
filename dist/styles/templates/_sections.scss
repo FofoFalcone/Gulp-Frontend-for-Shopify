@@ -1,0 +1,92 @@
+.main-content {
+  @include lg-screen {
+    margin-bottom: calculateRem(110px);
+  }
+  @include sm-screen {
+    margin-bottom: calculateRem(50px);
+  }
+}
+
+
+// Section max width
+main {
+  // Button
+  .btn,
+  .shopify-payment-button .shopify-payment-button__button--unbranded {
+    @include lg-screen {
+      padding: calculateRem(12px) calculateRem(24px);
+    }
+  }
+
+  .page-width {
+    @include lg-screen {
+      max-width: 90%;
+    }
+    .grid-view-item.product-card {
+      @include lg-screen {
+        text-align: center;
+      }
+      
+      &:focus, &:hover {
+        .product-card__title {
+            color: $gold;
+            border-bottom-color: $gold;
+        }
+      }
+
+      .product-card {
+        &__title {
+          @include sm-screen {
+            @include font-size(20px);
+          }
+        }
+
+        &__subtitle {
+          @include lg-screen {
+            @include font-size(14px);
+            padding-top: calculateRem(10px);
+          }
+        }
+      }
+
+      .price--listing {
+        @include lg-screen {
+          margin-top: calculateRem(20px);
+        }
+      }
+
+      .price__regular,
+      .price__sale {
+        @include lg-screen {
+          margin: 0;
+        }
+      }
+
+      .price-item--regular {
+        @include lg-screen {
+          font-weight: $normal;
+        }
+      }
+    }
+
+    .price.price--listing {
+      @include lg-screen {
+        align-items: center;
+      }
+    }
+
+    // Sections subtitle
+    .section-header--subtitle {
+      margin-bottom: calculateRem(10px);
+      @include lg-screen {
+        letter-spacing: calculateRem(1px);
+      }
+    }
+
+    @include lg-screen {
+      [class*="index-section--flush"] + [class*="index-section--flush"] {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.newsletter-section-icon {
+  text-align: center;
+  margin: 0 auto calculateRem(16px);
+  .icon-mail {
+    max-width: calculateRem(40px);
+  }
+}

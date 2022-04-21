@@ -1,0 +1,15 @@
+// HEADER
+
+.site-header {
+  .site-header__logo-image {
+    max-width: calculateRem(50px);
+    @include sm-screen {
+      max-width: calculateRem(40px);
+    }
+  }
+}
+
+.site-nav__link .site-nav__label {
+  @include font-size(18px);
+  font-weight: $semibold;
+}

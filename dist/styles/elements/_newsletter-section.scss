@@ -1,0 +1,34 @@
+.newsletter-section {
+  &__checkboxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkbox {
+    display: flex;
+    margin-bottom: calculateRem(10px);
+  }
+
+  .contact-form.form-single-field {
+    max-width: calculateRem(720px);
+  }
+}
+
+.newsletter-section,
+.contact-page {
+  .checkbox-text {
+    @include font-size(12px);
+    margin-left: calculateRem(10px);
+  }
+
+  .checkbox-link {
+    text-decoration: underline;
+  }
+
+  .input-group {
+    margin-bottom: calculateRem(20px);
+    &__field {
+      margin-bottom: 0;
+    }
+  }
+}

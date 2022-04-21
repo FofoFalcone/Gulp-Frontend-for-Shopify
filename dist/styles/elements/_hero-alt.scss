@@ -1,0 +1,50 @@
+.hero-alt {
+  &__container {
+    height: 100%;
+  }
+
+  &__frame {
+    @include lg-screen {
+      position: absolute;
+      top: 10%;
+      bottom: 0;
+      left: 5%;
+      margin: auto;
+
+      .hero__btn {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    padding: calculateRem(40px);
+    @include lg-screen {
+      max-width: 40%;
+    }
+    @include sm-screen {
+      margin: auto 5%;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: calculateRem(1px);
+  }
+
+  &__heading.h1 {
+    @include lg-screen {
+      @include font-size(40px);
+    }
+    @include sm-screen {
+      @include font-size(28px);
+    }
+  }
+
+  &--no-opacity.hero__overlay {
+    &::before {
+      opacity: 0;
+    }
+  }
+}

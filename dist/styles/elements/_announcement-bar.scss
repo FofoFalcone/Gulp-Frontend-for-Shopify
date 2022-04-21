@@ -1,0 +1,15 @@
+.announcement-bar {
+  .announcement-bar {
+    &__message {
+      @include font-size(13px);
+      font-weight: $normal;
+      letter-spacing: calculateRem(0.5px);
+      padding: calculateRem(3px);
+
+      @include sm-screen {
+        @include font-size(10px);
+        padding: calculateRem(3px) calculateRem(24px);
+      }
+    }
+  }
+}

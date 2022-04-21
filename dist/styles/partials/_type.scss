@@ -1,0 +1,71 @@
+// Main Hero Title
+.hero {
+  .mega-title {
+    @include lg-screen {
+      @include font-size(68px);
+    }
+  }
+  .mega-subtitle {
+    font-weight: $normal;
+    p {
+      @include lg-screen {
+        @include font-size(26px);
+      }
+    }
+  }
+}
+
+// Sections titles
+.section-header,
+.rte,
+#shopify-section-product-template {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    text-transform: none;
+    letter-spacing: normal;
+    @include lg-screen {
+      @include font-size(40px);
+    }
+  }
+
+  h1,
+  .h1 {
+    @include sm-screen {
+      @include font-size(34px);
+    }
+  }
+}
+
+// Sections text
+.rte-setting.featured-row__subtext {
+  @include lg-screen {
+    @include font-size(16px);
+    line-height: 2;
+    margin-bottom: calculateRem(30px);
+  }
+}
+
+// Contact Page h2
+.contact-page {
+  h2,
+  .h2 {
+    @include font-size(28px);
+  }
+}
+
+#shopify-section-header {
+  .site-nav__link:focus .site-nav__label,
+  .site-nav__link:not([disabled]):hover .site-nav__label {
+    border-bottom-color: $gold;
+  }
+}

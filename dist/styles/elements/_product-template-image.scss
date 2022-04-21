@@ -1,0 +1,14 @@
+#shopify-section-product-template {
+  .product-single__media-wrapper {
+    @include lg-screen {
+      max-width: calculateRem(650px) !important;
+    }
+  }
+
+  .feature-row__image.product-featured-media {
+    @include lg-screen {
+      max-width: calculateRem(650px) !important;
+      max-height: unset !important;
+    }
+  }
+}

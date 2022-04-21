@@ -1,0 +1,44 @@
+.featured-blog .article,
+#shopify-section-blog-template .article {
+  &__grid-image-wrapper {
+    height: calculateRem(250px);
+    overflow: hidden;
+    @include sm-screen {
+      height: calculateRem(200px);
+    }
+    &.js {
+      width: 100%;
+      max-width: unset !important;
+      margin: 0;
+      .article__grid-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 150%;
+        max-width: unset !important;
+        max-height: unset !important;
+      }
+    }
+  }
+  &__grid-image-container {
+    position: relative;
+    height: calculateRem(200px);
+    margin: 0 0 calculateRem(30px) 0;
+  }
+
+  &__date {
+    @include font-size(12px);
+    color: $grey-9;
+    margin-bottom: 0;
+    margin: calculateRem(20px) 0 calculateRem(10px);
+  }
+
+  &__title {
+    font-family: shopify_font_family("type_base_font");
+    font-style: shopify_font_style("type_base_font");
+    font-weight: $semibold;
+    @include font-size(18px);
+  }
+}

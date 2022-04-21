@@ -1,0 +1,5 @@
+.featured-collection {
+  &__grid-item {
+    max-width: calculateRem(450px);
+  }
+}
